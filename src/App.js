@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {CourseCard} from "./components";
+import {CourseCard} from "./components/CourseCard";
 
 function App() {
   const grade = ["A", "B+", "B", "C+", "C", "D+", "D", "F", "W"];
