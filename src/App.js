@@ -15,54 +15,54 @@ function App() {
    */
   function calculateGPA(cc) {
     // TODO
-    var r_gpa = 0
-    var r_cre  = 0 
-    var cal_gpa = 0
+    var Real_GPA     = 0
+    var Real_CREDIT  = 0 
+    var cal_gpa      = 0
     cc.forEach((item) => {
       switch(item.grd){
         case 'A' :
-          r_gpa = 4
-          r_cre += Number(item.crd) 
-          cal_gpa += r_gpa * Number(item.crd)
+          Real_GPA = 4
+          Real_CREDIT += Number(item.crd) 
+          cal_gpa += Real_GPA * Number(item.crd)
           break
         case 'B+' :
-          r_gpa = 3.5
-          r_cre += Number(item.crd)
-          cal_gpa += r_gpa * Number(item.crd)
+          Real_GPA = 3.5
+          Real_CREDIT += Number(item.crd)
+          cal_gpa += Real_GPA * Number(item.crd)
           break
         case 'B' :
-          r_gpa = 3
-          r_cre += Number(item.crd)
-          cal_gpa += r_gpa * Number(item.crd)
+          Real_GPA = 3
+          Real_CREDIT += Number(item.crd)
+          cal_gpa += Real_GPA * Number(item.crd)
           break
         case 'C+' :
-          r_gpa = 2.5
-          r_cre += Number(item.crd)
-          cal_gpa += r_gpa * Number(item.crd)
+          Real_GPA = 2.5
+          Real_CREDIT += Number(item.crd)
+          cal_gpa += Real_GPA * Number(item.crd)
           break
         case 'C' :
-          r_gpa = 2
-          r_cre += Number(item.crd)
-          cal_gpa += r_gpa * Number(item.crd)
+          Real_GPA = 2
+          Real_CREDIT += Number(item.crd)
+          cal_gpa += Real_GPA * Number(item.crd)
           break
         case 'D+' :
-          r_gpa = 1.5
-          r_cre += Number(item.crd)
-          cal_gpa += r_gpa * Number(item.crd)
+          Real_GPA = 1.5
+          Real_CREDIT += Number(item.crd)
+          cal_gpa += Real_GPA * Number(item.crd)
           break
         case 'D' :
-          r_gpa = 1
-          r_cre += Number(item.crd)
-          cal_gpa += r_gpa * Number(item.crd)
+          Real_GPA = 1
+          Real_CREDIT += Number(item.crd)
+          cal_gpa += Real_GPA * Number(item.crd)
           break
         case 'F' :
-          r_gpa = 0
-          r_cre += Number(item.crd)
-          cal_gpa += r_gpa * Number(item.crd)
+          Real_GPA = 0
+          Real_CREDIT += Number(item.crd)
+          cal_gpa += Real_GPA * Number(item.crd)
           break
       }  
     });
-    setGPA(cal_gpa / r_cre) 
+    setGPA(cal_gpa / Real_CREDIT) 
   }
 
   /**
